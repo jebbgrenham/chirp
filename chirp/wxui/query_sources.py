@@ -562,7 +562,7 @@ class RRQueryDialog(QuerySourceDialog):
         panel.SetSizer(grid)
         self._uszip = wx.TextCtrl(
             panel,
-            value=CONF.get('zipcode', 'radioreference') or '',
+            value=CONF.get('zipcode', 'radioreference') or '00000',
             validator=ZipValidator())
         self._add_grid(grid, 'ZIP Code', self._uszip)
 
